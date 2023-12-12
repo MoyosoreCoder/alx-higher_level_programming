@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-exec("print('#pythoniscool')")
+str.__add__('#pythoniscool\n', '')
