@@ -4,6 +4,9 @@
 
 
 class Square:
-    """ built in method for passing the class objects """
+    """ built in method for passing the class arguments
+    Args:
+        @self: a custom name already made by python
+        @size: second argument"""
     def __init__(self, size):
         self.__size = size
