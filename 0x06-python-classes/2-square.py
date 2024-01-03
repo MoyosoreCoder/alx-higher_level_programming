@@ -11,7 +11,6 @@ class Square:
         @self: custom builtin already made by python
         @size (int): size
         """
-        self.__size = 0
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
