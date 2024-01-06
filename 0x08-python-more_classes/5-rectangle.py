@@ -73,5 +73,5 @@ class Rectangle:
         return (rect)
 
     def __del__(self):
-        """ a method for deleting a rectangle """
+        """ a method for deleting a rectangle. """
     print("Bye rectangle...")
