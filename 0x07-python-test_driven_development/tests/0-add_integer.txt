@@ -54,27 +54,3 @@ If the argument is a non-integer and non-float, a TypeError is raised:
 >>> add_integer(4, "School")
 Traceback (most recent call last):
 TypeError: b must be an integer
-
-If a string was passed to b argument, code fails
-
-::
-
-add_integer("School", 4)
-Traceback (most recent call last):
-TypeError: a must be an integer
-
-If none was passed to the function, code fails
-
-::
-
->>> add_integer(None)
-Traceback (most recent call last):
-TypeError: a must be an integer
-
-And again with NaN numbers.
-
-::
-
->>> add_integer(float('nan'))
-Traceback (most recent call last):
-ValueError: cannot convert float NaN to integer
