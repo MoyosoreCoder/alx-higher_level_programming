@@ -46,7 +46,7 @@ If either argument is a non-integer and non-float, a TypeError is raised
 
 ::
 
->>> add_integer("hello", "School")
+>>> add_integer("School", 4)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
