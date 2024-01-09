@@ -6,8 +6,8 @@ How to use 0-add_integer.py to test
 This modules talked about the addition of two integers or two floating numbers
 using the function ``0-add_integer.py``
 
-Content
-=======
+Usage
+=====
 
 ``0-add_integer.py(...)`` returns addition of its two arguments using ``+`` for the operation
 
