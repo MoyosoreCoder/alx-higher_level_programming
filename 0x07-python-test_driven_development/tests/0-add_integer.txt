@@ -46,18 +46,18 @@ If the argument is a non-integer and non-float, a TypeError is raised
 
 ::
 
->>> add_integer("School", 4)
+>>> add_integer("hello", "there")
 Traceback (most recent call last):
 TypeError: a must be an integer
 
 ::
 
->>> add_integer(4, "School")
+>>> add_integer(float('inf'))
 Traceback (most recent call last):
-TypeError: b must be an integer
+OverflowError: cannot convert float infinity to integer
 
 ::
 
->>> add_integer(None)
+>>> add_integer(2, float('inf'))
 Traceback (most recent call last):
-TypeError: a must be an integer
+OverflowError: cannot convert float infinity to integer
