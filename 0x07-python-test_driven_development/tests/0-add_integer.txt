@@ -42,7 +42,7 @@ Not a numbers
 
 
 ``add_integer(...)`` expects that both arguments are either integers or floats.
-If either argument is a non-integer and non-float, a TypeError is raised
+If the argument is a non-integer and non-float, a TypeError is raised
 
 ::
 
