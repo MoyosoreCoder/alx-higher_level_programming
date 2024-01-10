@@ -11,7 +11,7 @@ def write_file(filename="", text=""):
         text: text to write
 
     Raises
-        Exception: when the file can be opened
+        Exception: if the file can be opened
 
     """
 
