@@ -69,28 +69,16 @@ If the argument is a non-integer and non-float, a TypeError is raised:
 Traceback (most recent call last):
 TypeError: b must be an integer
 
-If the argument is an infinity number, code fails
+And again, with Nan
 
 ::
 
->>> add_integer(float('inf'))
+>>> add_integer(float('nan'))
 Traceback (most recent call last):
-OverflowError: cannot convert float infinity to integer
+ValueError: cannot convert float NaN to integer
 
 ::
 
 >>> add_integer(2, float('inf'))
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
-
-::
-
->>> add_integer(None)
-Traceback (most recent call last):
-TypeError: a must be an integer
-
-::
-
->>> add_integer(None)
-Traceback (most recent call last):
-TypeError: a must be an integer
