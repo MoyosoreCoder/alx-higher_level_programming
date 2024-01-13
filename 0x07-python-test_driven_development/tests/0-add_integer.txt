@@ -65,17 +65,9 @@ If the argument is a non-integer and non-float, a TypeError is raised:
 
 ::
 
->>> add_integer("hello", "there")
+>>> add_integer(("Bye", "School"))
 Traceback (most recent call last):
 TypeError: a must be an integer
-
-::
-
->>> add_integer(4, "School")
-Traceback (most recent call last):
-TypeError: b must be an integer
-
-::
 
 >>> add_integer(float('nan'))
 Traceback (most recent call last):
@@ -86,4 +78,10 @@ ValueError: cannot convert float NaN to integer
 >>> add_integer(2, float('nan'))
 Traceback (most recent call last):
 ValueError: cannot convert float NaN to integer
+
+::
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
 
