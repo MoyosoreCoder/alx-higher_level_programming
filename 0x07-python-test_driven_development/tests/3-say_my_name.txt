@@ -1,0 +1,21 @@
+=======================================================
+How to use 3-say_my_name.py as a test drive development
+=======================================================
+
+``3-say_my_name.py`` is a function that will print the first_name and last_name
+
+Usage
+=====
+First, import the module to locate the function definition
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("Mariam", "Kel Moyo")
+My name is Mariam Kel Moyo
+
+>>> say_my_name("Mariam", "Moyo")
+My name is Mariam Moyo
+
+>>> say_my_name("", "Bob")
+My name is  Bob
+
+>>> say_my_name("Ayo", "")
+My name is Ayo 
