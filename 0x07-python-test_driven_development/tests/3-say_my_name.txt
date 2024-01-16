@@ -8,14 +8,22 @@ Usage
 =====
 First, import the module to locate the function definition
 >>> say_my_name = __import__('3-say_my_name').say_my_name
+
 >>> say_my_name("Mariam", "Kel Moyo")
 My name is Mariam Kel Moyo
 
 >>> say_my_name("Mariam", "Moyo")
 My name is Mariam Moyo
 
->>> say_my_name("", "Bob")
-My name is  Bob
+Failure
+=======
 
->>> say_my_name("Ayo", "")
-My name is Ayo 
+>>> say_my_name(12, "White")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("White", 23)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
