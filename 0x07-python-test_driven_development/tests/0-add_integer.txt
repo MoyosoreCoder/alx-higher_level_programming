@@ -42,16 +42,12 @@ Note that floats are casted to ints before addition is performed.
 >>> add_integer(-2.9, -0.2)
 -2
 
-::
-
 Floating and non-floating point values can be combined.
 
 ::
 
 >>> add_integer(2.3, -3)
 -1
-
-::
 
 The second argument is optional - by default, it is 98.
 
@@ -69,11 +65,19 @@ If the argument is a non-integer and non-float, a TypeError is raised:
 
 ::
 
->>> add_integer(4, "School")
+>>> add_integer(("Bye", "School"))
 Traceback (most recent call last):
-TypeError: b must be an integer
+TypeError: a must be an integer
 
-If the argument is an infinity number, code fails
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
+::
+
+>>> add_integer(2, float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
 
 ::
 
@@ -81,8 +85,3 @@ If the argument is an infinity number, code fails
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
-::
-
-    >>> add_integer(2, float('inf'))
-    Traceback (most recent call last):
-    OverflowError: cannot convert float infinity to integer
