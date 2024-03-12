@@ -1,7 +1,9 @@
 #!/usr/bin/node
 
-const addMeMaybe = (number, theFunction) => {
-  theFunction(number + 1);
+const callMeMoby = (x, theFunction) => {
+  for (; x > 0; x--) {
+    theFunction();
+  }
 };
 
-module.exports = { addMeMaybe };
+module.exports = { callMeMoby };
