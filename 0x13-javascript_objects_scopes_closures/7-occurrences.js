@@ -1,6 +1,4 @@
 #!/usr/bin/node
-module.exports = class Square extends require('./4-rectangle.js') {
-  constructor (size) {
-    super(size, size);
-  }
+exports.nbOccurences = function (list, searchElement) {
+  return list.reduce((count, current) => current === searchElement ? count + 1 : count, 0);
 };
