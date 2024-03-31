@@ -1,0 +1,16 @@
+/
+n-import_modules           0x0C-python-almost_a_circle              of
+0x03-python-data_structures          0x0D-SQL_introduction                    privileges
+0x04-python-more_data_structures     0x0E-SQL_more_queries                    README.md
+0x05-python-exceptions               0x0F-python-object_relational_mapping    the
+0x06-python-classes                  0x10-python-network_0                    user_0d_1
+0x07-python-test_driven_development  0x12-javascript-warm_up                  user_0d_2
+0x08-python-more_classes             0x13-javascript_objects_scopes_closures  users
+0x09-python-everything_is_object     all
+root@c09e8b7b9933:~/alx-higher_level_programming# cd 0x10-python-network_0
+root@c09e8b7b9933:~/alx-higher_level_programming/0x10-python-network_0# ls
+0-body_size.sh      101-post_json.sh  1-body.sh    3-methods.sh  5-post_params.sh  6-peak.py
+100-status_code.sh  102-catch_me.sh   2-delete.sh  4-header.sh   6-main.py         README.md
+root@c09e8b7b9933:~/alx-higher_level_programming/0x10-python-network_0# vi
+
+
