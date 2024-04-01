@@ -5,13 +5,18 @@ to the URL and displays the body of the response (decoded in utf-8).
 """
 import urllib.request
 import sys
-import urllib.parse
+import urllib.error
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    value = {"email": sys.argv[2]}
-    data = urllib.parse.urlencode(value).encode("ascii")
+        if len(sys.argv) != 2:
+            print("Usage: {} <URL>".format(sys.argv[0]))
+            sys.exit(1)
 
-    request = urllib.request.Request(url, data)
-    with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8"))
+            url = sys.argv[1]
+            try:
+                with urllib.request.urlopen(url) as response:
+                    print(response.read().decode("utf-8"))
+            except urllib.error.HTTPError as e:
+                print("Error code: {}".format(e.code))
+            except urllib.error.URLError as e:
+                print("Failed to reach the server:", e.reason)
