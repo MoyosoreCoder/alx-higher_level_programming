@@ -19,7 +19,7 @@ class Rectangle(Base):
             TypeError: If either of width or height is not an int.
             ValueError: If either of width or height <= 0.
             TypeError: If either of x or y is not an int.
-            ValueError: If either of x or y <= 0.
+            ValueError: If either of x or y < 0.
         """
         self.width = width
         self.height = height
@@ -65,7 +65,6 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-
     @property
     def y(self):
         """Getter of y in the Rectangle."""
