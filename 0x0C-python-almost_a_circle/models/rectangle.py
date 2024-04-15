@@ -5,7 +5,6 @@ from models.base import Base
 
 class Rectangle(Base):
     """Represent a class Rectangle."""
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a Base class with class rectangle.
 
@@ -65,6 +64,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
+
     @property
     def y(self):
         """Getter of y in the Rectangle."""
