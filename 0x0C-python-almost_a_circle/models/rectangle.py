@@ -7,8 +7,7 @@ class Rectangle(Base):
     """ A python script with name Rectangle
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Initializes Rectangle instance """
-        """
+        """ Initializes Rectangle instance
         Args:
             width(int): The width of the new Rectangle.
             height(int): The height of the new Rectangle.
