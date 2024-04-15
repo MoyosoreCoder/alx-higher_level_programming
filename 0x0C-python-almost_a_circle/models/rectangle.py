@@ -4,7 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ A python script with name Rectangle """
+    """ A python script with name Rectangle
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Initializes Rectangle instance """
