@@ -1,19 +1,20 @@
 #!/usr/bin/python3
-""" Python script that defines class Rectangle"""
+"""Defines a rectangle class."""
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Represent a class Rectangle."""
+    """A class rectangle which inherit Base class."""
+
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a Base class with class rectangle.
+        """Initialize a new class Rectangle
 
         Args:
-            width (int): The width in a Rectangle.
-            height (int): The height in a Rectangle.
-            x (int): The x variable in a Rectangle.
-            y (int): The y variable in a Rectangle.
-            id (int): The id parameter in the Rectangle.
+            width (int): The width in the Rectangle.
+            height (int): The height in the Rectangle.
+            x (int): The x in the  Rectangle.
+            y (int): The y in the Rectangle.
+            id (int): The id of the Rectangle.
         Raises:
             TypeError: If either of width or height is not an int.
             ValueError: If either of width or height <= 0.
@@ -28,7 +29,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Getter of with in the Rectangle."""
+        """Set or get the width in a Rectangle."""
         return self.__width
 
     @width.setter
@@ -41,7 +42,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Getter of height in a Rectangle."""
+        """Set or gets the height in a Rectangle."""
         return self.__height
 
     @height.setter
@@ -54,7 +55,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """Getter of x in a Rectangle."""
+        """Set or get the Rectangle."""
         return self.__x
 
     @x.setter
@@ -67,7 +68,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """Getter of y in the Rectangle."""
+        """Set or get the y of the Rectangle."""
         return self.__y
 
     @y.setter
