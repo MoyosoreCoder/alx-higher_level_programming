@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Python script that defines class Rectangle """
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -20,7 +21,7 @@ class Rectangle(Base):
 
         @width.setter
         def width(self, value):
-            return self.__width = value
+            self.__width = value
 
         @property
         def height(self):
