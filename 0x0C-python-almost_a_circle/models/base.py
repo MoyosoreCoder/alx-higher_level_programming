@@ -4,24 +4,24 @@ import json
 
 
 class Base:
-    """ Base class for monitoring id attributes """
+    """This is class of Base model
+
     Private Class Attributes:
-        __nb_object(int): Number of instantiated Bases
+        __nb_object (int): Number of instantiated Bases.
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-    """Method that initializes a new Base
-    Args:
-        id(int): The identity of the new Base.
-    """
+        """Initialize a the class Base.
 
+        Args:
+            id (int): The id of the Base.
+        """
         if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
-            self.id = Base.__no_bjects += 1
             self.id = Base.__nb_objects
 
     @staticmethod
